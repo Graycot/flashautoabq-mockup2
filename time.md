@@ -44,4 +44,10 @@
 - Ran a ShortPixel [image compression optimization](https://shortpixel.com/image-compression-test/#cruncher) of the current website. It determined that 17 images could be compressed to nearly half the current size which will improve page load speed and SEO ranking.
 - Implemented a clickable phone number link and an embedded google maps iframe.
 
-## **5/18/2022 10:33pm - 5/19/2022 x:xxam: x hour xx min**
+## **5/18/2022 10:33pm - 5/19/2022 1:58am: 2 hour 35 min**
+
+- Installed TailWindCSS framework to ensure design consistency across components
+- Updated Netlify production folder to `/public/` and setup TailWind build command `npm run tw:build`
+- Installed SplideJS library to handle image carousel functionality
+- Customized image carousel
+- Redesigned Contact page to be modern and information dense with a focus on functionality.

@@ -1,5 +1,12 @@
 <html lang="en">
   <head>
+    <style>
+.splide__slide img {
+  width: 100%;
+
+}
+
+    </style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -10,21 +17,82 @@
     <link rel="stylesheet" href="/css/tailwind.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <script src="/JS/component-loader.js"></script>
+    <link rel="stylesheet" href="/JS/splide-4.0.2/dist/css/splide.min.css">
+    <script src="/JS/splide-4.0.2/dist/js/splide.min.js"></script>
   </head>
   <body>
     <nav id="nav"></nav>
-    <div class="items-center justify-center h-screen flex-column">
-      <div class="p-20 text-center">
-        <h1 class="text-9xl">tailwindcss 2.0</h1>
-        <div class="p-10 text-4xl bg-green-200 hover:bg-green-500">
-          Is now live on server !!
-        </div>
-        <div class="p-5 text-2xl">
-          <a href="#" class="text-blue-500 hover:text-purple-700"
-            >How to set up this tailwind CSS 2.0 ?</a
-          >
-        </div>
-      </div>
+
+    <section
+    id="main-carousel"
+    class="splide"
+    aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="/assets/slideshow/Flash-Automotive-Albuquerque-auto-repair-shops-promo.jpg">
+        </li>
+        <li class="splide__slide">
+          <img src="thumbnail02.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="thumbnail03.jpg" alt="">
+        </li>
+      </ul>
     </div>
+  </section>
+
+    <section
+    id="thumbnail-carousel"
+    class="splide"
+    aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="/assets/slideshow/Flash-Automotive-Albuquerque-auto-repair-shops-promo.jpg">
+        </li>
+        <li class="splide__slide">
+          <img src="thumbnail02.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="thumbnail03.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+    
+
+
+    <script type="text/javascript">
+document.addEventListener( 'DOMContentLoaded', function () {
+  var main = new Splide( '#main-carousel', {
+    type      : 'fade',
+    rewind    : true,
+    pagination: false,
+    arrows    : false,
+  } );
+
+  var thumbnails = new Splide( '#thumbnail-carousel', {
+    fixedWidth  : 100,
+    fixedHeight : 60,
+    gap         : 10,
+    rewind      : true,
+    pagination  : false,
+    isNavigation: true,
+    breakpoints : {
+      600: {
+        fixedWidth : 60,
+        fixedHeight: 44,
+      },
+    },
+  } );
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+} );
+    </script>
   </body>
 </html>
