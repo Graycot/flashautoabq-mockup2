@@ -1,1 +1,0 @@
-[build]command = "npm run build"publish = "dist"[context.production]environment = { NODE_VERSION = "15.2.0", NODE_ENV = "production" }[dev]command = "npm run watch"framework = "#custom"publish = "dist"port = 3000targetPort = 8182NODE_ENV = "development"
