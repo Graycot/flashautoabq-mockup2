@@ -52,8 +52,14 @@
 - Customized image carousel
 - Redesigned Contact page to be modern and information dense with a focus on functionality.
 
-## **5/19/2022 10:22pm - 5/19/2022 11:41am: 1 hour 19 min**
+## **5/19/2022 10:22pm - 5/20/2022 1:41pm: 3 hour 19 min**
 
 - Rewrote header/navbar into TailWind.
 - Removed SplideJS due to unexpected performance hit on initial load. Currently looking at a FlowBite/TailWind component as a replacement for the image carousel.
 - Changed color scheme and background iframe contrast on Contact page.
+- More site research. Downloaded images such as picture of flash Cadillac, NAPA & ASE badges
+- Built hero component on home page
+- Wrote quick summary below hero image
+- Built at a glance contact component on homepage
+- Started building credential list component on homepage
+- Started writing descriptions for each credential card
